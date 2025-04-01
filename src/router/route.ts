@@ -5,9 +5,4 @@ export const route = {
 
   login: prefix + "login",
   home: prefix + "home",
-  workbench: prefix + "workbench",
-  folder: prefix + "folder",
-  setting: prefix + "setting",
-
-  withdrawal: prefix + "withdrawal",
 };

@@ -1,42 +1,117 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import "tailwindcss";
+
+/* ===== tailwind 커스텀 테마 ===== */
+@theme {
+  /* Color */
+  --color-primary: #8a1e35;
+  --color-primary-variant: #a98d00;
+  --color-secondary: #25d9c6;
+  --color-secondary-variant: #138785;
+  --color-modal: #363f45;
+  --color-positive: #6221ea; /* System Blue */
+  --color-error: #d32f2f; /* System Red */
+  --color-success: #4caf50; /* System Green */
+  --color-caution: #f9a825; /* System Yellow */
+
+  /* Black Color */
+  --color-system-000: #000;
+  --color-system-100: #f2f4f5;
+  --color-system-200: #e6e8eb;
+  --color-system-300: #d1d5d9;
+  --color-system-400: #b8bfc4;
+  --color-system-500: #808991;
+  --color-system-600: #636c73;
+  --color-system-700: #262c31;
+  --color-system-800: #212528;
+  --color-system-900: #171a1f;
+
+  /* Gradient */
+  --gradient-basic: linear-gradient(265.48deg, #fad103 2.28%, #25d9c6 117.22%);
+
+  /* Font */
+  --font-pretendard: "Pretendard", sans-serif;
+}
+
+/* ===== global css ===== */
+.flex-align-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bg-gradient-basic {
+  background: var(--gradient-basic);
+}
+
+/* ===== toastify css ===== */
+.toast {
+  font-family: "Pretendard";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32.5px;
   text-align: center;
+  letter-spacing: -0.054px;
+  color: #ffffff;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.Toastify__toast-container {
+  padding: 0px !important;
+  width: unset !important;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Toastify__toast-container--top-center {
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 1920px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.Toastify__toast-theme--light {
+  background: rgba(0, 0, 17, 0.5) !important;
+  border-radius: 999px !important;
+  font-family: "Pretendard" !important;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 32.5px;
+  letter-spacing: -0.3%;
+  text-align: center;
+  color: #fff !important;
 }
 
-.card {
-  padding: 2em;
+.Toastify__toast-body {
+  gap: 5px;
+  padding: 6px 30px !important;
 }
 
-.read-the-docs {
-  color: #888;
+.Toastify__toast-body > div:last-child {
+  word-break: break-word;
+  flex: none !important;
+}
+
+.Toastify__toast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-width: 236px;
+  width: auto;
+  padding: 0px 10px !important;
+  min-height: 45px !important;
+  height: auto;
+  /* margin-bottom: 0px !important; */
+}
+
+.Toastify__close-button {
+  display: none;
+}
+
+.Toastify__toast-icon {
+  margin-inline-end: 0 !important;
+  width: 6px !important;
+  height: 6px;
 }

@@ -1,12 +1,14 @@
 import { Routes, Route } from "react-router-dom";
-import { prefix, route } from "./route";
+import { route } from "./route";
 import Login from "../pages/login";
+import Home from "../pages/home";
 
 const Router = () => {
   return (
     <Routes>
-      <Route path={`${prefix}${route.default}`} element={<Login />} />
-      <Route path={`${prefix}${route.login}`} element={<Login />} />
+      <Route path={`${route.default}`} element={<Login />} />
+      <Route path={`${route.login}`} element={<Login />} />
+      <Route path={`${route.home}`} element={<Home />} />
     </Routes>
   );
 };
