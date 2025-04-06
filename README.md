@@ -23,9 +23,9 @@ Minimal React setup with Vite, HMR, and ESLint.
 
 🔥 **Vite + React로 빠르고 효율적인 개발을 시작하세요!** 🔥
 
-## 🧑‍💻 Member
-이선욱 - https://github.com/leesunuk \
-김용연 - https://github.com/Rider96 \
-조경준 - https://github.com/GenTaram \
-이상민 - https://github.com/geniusBrainLsm \
-김진영 - https://github.com/Kimhasa
+## 🧑‍💻 Member  
+- 이선욱 - [GitHub](https://github.com/leesunuk)  
+- 김용연 - [GitHub](https://github.com/Rider96)  
+- 조경준 - [GitHub](https://github.com/GenTaram)  
+- 이상민 - [GitHub](https://github.com/geniusBrainLsm)  
+- 김진영 - [GitHub](https://github.com/Kimhasa)
